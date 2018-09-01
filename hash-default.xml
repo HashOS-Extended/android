@@ -10,6 +10,11 @@
   <!-- HashOS Projects -->
   <project path="android" name="android" remote="hash" />
 
+  <!-- General -->
+  <project path="art" name="android_art" remote="hash" />
+  <project path="bionic" name="android_bionic" remote="hash" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="hash" />
+
   <!-- Build -->
   <project path="build/make" name="android_build" remote="hash" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -26,10 +31,75 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- External -->
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="hash" />
+  <project path="external/perfetto" name="android_external_perfetto" remote="hash" />
+  <project path="external/selinux" name="android_external_selinux" remote="hash" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="hash" />
+
   <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="hash" />
   <project path="frameworks/base" name="android_frameworks_base" remote="hash" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="hash" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="hash" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="hash" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="hash" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="hash" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="hash" />
+  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" remote="hash" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" remote="hash" revision="android-9.0-caf-8996" />
+  <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="hash" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="hash" />
+  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" remote="hash" revision="android-9.0-caf" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="hash" />
+  <project path="hardware/qcom/display-caf/msm8996" name="android_hardware_qcom_display" remote="hash" revision="android-9.0-caf-8996" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="hash" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="hash" />
+  <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" remote="hash" revision="android-9.0-caf-8996" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="hash" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="hash" />
+  <project path="hardware/ril-caf" name="android_hardware_ril" remote="hash" revision="android-9.0-caf" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="hash" />
+  <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" remote="hash" />
+  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="hash" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="hash" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="hash" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="hash" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="hash" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="hash" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="hash" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="hash" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="hash" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="hash" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="hash" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="hash" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="hash" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="hash" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" clone-depth="1" remote="hash" />
+
+  <!-- System -->
+  <project path="system/bt" name="android_system_bt" remote="hash" />
+  <project path="system/core" name="android_system_core" remote="hash" />
+  <project path="system/extras" name="android_system_extras" remote="hash" />
+  <project path="system/security" name="android_system_security" remote="hash" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="hash" />
+  <project path="system/qcom" name="android_system_qcom" remote="hash" />
+  <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="hash" />
+  <project path="system/vold" name="android_system_vold" remote="hash" />
 
   <!-- Vendor -->
   <project path="vendor/hash" name="android_vendor_hash" remote="hash" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="hash" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="hash" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="hash" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="hash" >
+    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
+  </project>
 
 </manifest>
