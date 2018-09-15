@@ -32,6 +32,9 @@
   </project>
 
   <!-- External -->
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="hash" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="hash" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="hash" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="hash" />
   <project path="external/perfetto" name="android_external_perfetto" remote="hash" />
   <project path="external/selinux" name="android_external_selinux" remote="hash" />
