@@ -31,6 +31,9 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_caf-sepolicy" remote="hash" />
+
   <!-- External -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="hash" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="hash" />
