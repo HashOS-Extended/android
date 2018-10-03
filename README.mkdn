@@ -22,6 +22,10 @@ The source at HashOS is well configured for building.
 
     . build/envsetup.sh
 	brunch <device_name>
+
+Or lunch script and follow the instructions
+
+    ./vendor/hash/utils/build-rom.sh
 	
 ## Submitting Patches ##
 ------------------
