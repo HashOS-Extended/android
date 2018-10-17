@@ -48,6 +48,7 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="hash" />
   <project path="frameworks/native" name="android_frameworks_native" remote="hash" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="hash" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="hash" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="hash" />
 
   <!-- Hardware -->
