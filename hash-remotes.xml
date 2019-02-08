@@ -7,6 +7,5 @@
   <remote  name="hash"
            fetch="https://github.com/HashOS"
            revision="refs/heads/android-9.0"
-           review="gerrit.hash-os.com" />
 
 </manifest>
