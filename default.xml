@@ -699,6 +699,9 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+    <!-- Include Lineage Remotes -->
+  <include name="los.xml" />
+  
   <!-- HashOS -->
   <include name="hash-default.xml" />
 
