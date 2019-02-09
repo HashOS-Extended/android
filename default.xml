@@ -8,6 +8,18 @@
            remote="aosp"
            sync-c="true"
            sync-j="12" />
+		   
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="hash"
+           fetch="https://github.com/HashOS"
+           revision="refs/heads/android-9.0"
+
+  <remote name="los"
+          fetch="https://github.com/LineageOS"
+          revision="pie"
+
 
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -698,8 +710,14 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+  
+  <!-- FIRST: Remove unused/forked AOSP Projects -->
+  <include name="remove.xml" />
 
   <!-- HashOS -->
   <include name="hash-default.xml" />
+  
+  <!-- Include Lineage Remotes -->
+  <include name="los.xml" />
 
 </manifest>

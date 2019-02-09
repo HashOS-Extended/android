@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Lineage Remotes -->
-  <remote name="los"
-          fetch="https://github.com/LineageOS"
-          revision="pie"
-
-
   <!-- Device -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_caf-sepolicy" remote="los" />
   

@@ -1,13 +1,4 @@
-
-
-  <!-- FIRST: Remove unused/forked AOSP Projects -->
-  <include name="remove.xml" />
-
-  <!-- Include Lineage Remotes -->
-  <include name="los.xml" />
-
-  <!-- Include Hash Remotes -->
-  <include name="hash-remotes.xml" />
+<manifest>
 
   <!-- HashOS Projects -->
   <project path="android" name="android" remote="hash" />
