@@ -714,6 +714,9 @@
   <!-- FIRST: Remove unused/forked AOSP Projects -->
   <include name="remove.xml" />
 
+    <!-- Include Lineage Remotes -->
+  <include name="los.xml" />
+  
   <!-- HashOS -->
   <include name="hash-default.xml" />
   
